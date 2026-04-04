@@ -115,3 +115,33 @@ curl -s "http://localhost:8080/divide?a=1&b=0"
 - **Endpoints:** `GET /health`, `GET /add`, `GET /subtract`, `GET /multiply`, `GET /divide` (with `a` and `b` query parameters where applicable).
 - **Tests:** `go test ./...`
 - **Docker build and run:** `docker build -t calculator-api .` then `docker run --rm -p 8080:8080 calculator-api`
+
+## Prompt in english
+
+-> The following prompt is the one I used to create the application
+
+Implement the project by following **exactly** the specification defined in:
+
+@docs/specification_calculator_api.md
+
+Mandatory rules:
+- Everything must be written in English (README, errors, JSON responses, comments).
+- Use Clean Architecture.
+- Use Chi (`github.com/go-chi/chi/v5`).
+- Include tests.
+- Include a functional Dockerfile.
+- Include a README.
+
+Implement using the following mandatory phases:
+1. Base project structure.
+2. Domain and `Calculate` use case.
+3. HTTP handlers and routes.
+4. Tests.
+5. Dockerfile and README.
+
+At the end of each phase:
+- stop immediately,
+- do not explain anything else,
+- only respond: "Phase X completed. Type 'continue' to proceed."
+
+Do not continue to the next phase until I say: "continue".
